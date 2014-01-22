@@ -1,0 +1,283 @@
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* =============================================================================
+   Section Windows
+   ========================================================================== */
+
+.section1,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7,
+.section8,
+.section9,
+.section10,
+.section11,
+.section12,
+.section13,
+.section14,
+.section15,
+.section16,
+.section17,
+.section18,
+.section19,
+.section20,
+.section21,
+.end-section {  
+	height: 1000px;
+	padding: 0; 
+	margin: 0; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	margin: 0 auto; 
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
+.section2{
+	height: 800px;
+	padding: 0; 
+	margin: 0; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	margin: 0 auto; 
+	box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+/* =============================================================================
+   Backgrounds
+   ========================================================================== */
+
+#first { 
+	/*background: url(../img/bg-a.png) 50% 0 no-repeat fixed; */
+	background-color: black;
+}
+#second { 
+	/*background: url(../img/bg-b.png) 50% 0 no-repeat fixed; */
+	background-color: #776F64;
+}
+#third { 
+	/*background: url(../img/bg-a.png) 50% 0 no-repeat fixed; */
+	background-color: #BAAE9E;
+	
+}
+#fourth { 
+	background-color: #659CA9;
+	/*background: url(../img/bg-b.png) 50% 0 no-repeat fixed; */
+}
+#fifth { 
+	background-color: #A4BEC3;
+
+	/*background: url(../img/bg-a.png) 50% 0 no-repeat fixed; */
+}
+#sixth{
+	background-color: #F09C48;
+}
+
+#seventh{
+	background-color: #E9B07C;
+}
+
+#eighth{
+	background-color: #787F68;
+}
+
+#ninth{
+	background-color: #D1D6C4;
+}
+
+#tenth{
+	background-color: #86799B;
+}
+
+#eleventh{
+	background-color: #8D8695;
+}
+
+#twelfth{
+	background-color: #535254;
+}
+
+#thirteenth{
+	background-color: #A9A9A9;
+}
+
+#fourteenth{
+	background-color: #334C66;
+}
+
+#fifteenth{
+	background-color: #78ACB5;
+}
+
+#sixteenth{
+	background-color: #EE797A;
+}
+
+#seventeenth{
+	background-color: #E4AEB1;	
+}
+
+#eighteenth{
+	background-color: #893012;	
+}
+#nineteenth{
+	background-color: #A05845;
+
+}
+
+#twentieth{
+	background-color: #AB5C97;
+}
+
+#twentyfirst{
+	background-color: #DFBED9;	
+}
+
+#end { 
+	background: url(../img/bg-b.png) 50% bottom no-repeat fixed; 
+}
+#web-pages { 
+	background: url(../img/bg-a.png) 50% 0 repeat-x fixed; 
+}
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+
+/* =============================================================================
+   Images
+   ========================================================================== */	
+
+
+/* =============================================================================
+   Articles
+   ========================================================================== */
+	
+#first article { 
+	width: 100%; 
+	top: 430px; 
+	position: absolute; 
+	text-align: center; 
+}	
+#second article,
+#third article,
+#fourth article,
+#fifth article,
+#end article { 
+	width: 90%; 
+	margin: 50px 0 0 50px;
+	position: absolute;
+	top: -1px;
+}
+
+	
+/* =============================================================================
+   Text
+   ========================================================================== */
+
+article h1 { 
+	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 2px;
+	font-size: 80px;
+	margin: 0 0 25px 0; 
+}
+
+article h2{
+	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 2px;
+	font-size: 40px;
+	margin: 0 0 25px 0; 
+
+}
+
+article h3{
+	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 2px;
+	font-size: 30px;
+	margin: 0 0 25px 0; 
+}
+article p { 
+	font-family: Helvetica;
+	font-size: 16px;
+}
+
+#first article,
+#third article,
+#fifth article {
+	color: #fff;
+} 
+
+#second article,
+#forth article,
+#end article {
+	color: #000;
+} 
+   
+   
+/* =============================================================================
+   Objects
+   ========================================================================== */   
+
+#first .object1,
+#second .object2,
+#third .object3,
+#fourth .object4,
+#fifth .object5,
+#end .objectend {
+	padding: 0; 
+	margin: 0; 
+	width: 100%; 
+	max-width: 1920px; 
+	position: relative; 
+	margin: 0 auto; 
+	min-height: 1000px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+#first .object1 { 
+	background: url(../img/object1.png) 50% 100px no-repeat fixed; 
+}
+#second .object2 { 
+	/* background-image: url(../img/object2.png); */
+	background-image: url(../img/illu/Satisfaction.png);
+}
+#third .object3 { 
+	/*background-image: url(../img/illu/Satisfaction.png);*/
+}
+#fourth .object4 { 
+	background-image: url(../img/illu/Virgin.png); 
+}
+#fifth .object5 { 
+	background-image: url(../img/object5.png); 
+}
+#end .objectend { 
+	background: url(../img/objectend.png) 50% 100px no-repeat fixed; 
+}
