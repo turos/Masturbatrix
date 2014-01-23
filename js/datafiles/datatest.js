@@ -76,10 +76,43 @@ $(document).ready(function(){
                 color: femaleColor,
                 data: [[1,2.96],[2,3.77],[3,2.37],[4,2.88],[5,3.32]]
     
-            }, {
+            },
+            {
+                name: 'Female error',
+                type: 'errorbar',
+                color: femaleColor,
+                lineWidth: 2,
+                data: [
+                          [1,2.60,3.34],
+                          [2,3.27,4.27],
+                          [3,2.07,2.67],
+                          [4,2.62,3.14],
+                          [5,2.83,3.81]
+                        ],
+                tooltip: {
+                    pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                }
+            }, 
+            {                
                 name: 'Male',
                 color: maleColor,
                 data: [[1, 13.85], [2, 9.31],[3, 7.72],[4,6.91],[5,7.36]]
+            },
+            {
+                name: 'Male error',
+                type: 'errorbar',
+                color: maleColor,
+                lineWidth: 2,
+                data: [
+                          [1,12.61,15.09],
+                          [2,8.64,9.98],
+                          [3,7.16,8.27],
+                          [4,6.50,7.31],
+                          [5,6.52,8.21]
+                        ],
+                tooltip: {
+                    pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                }
             },
             {
                 type: 'line',
@@ -124,7 +157,7 @@ $(document).ready(function(){
             chart: {
                 type: 'scatter',
                 zoomType: 'xy',
-                                backgroundColor: chartBackgroundColor
+                backgroundColor: chartBackgroundColor
             },
             title: {
                 text: 'Masturbation level based on length of current relationship'
@@ -374,9 +407,25 @@ $(document).ready(function(){
                               [35,3.78],
                               [55,2.02],
                               [75,0.95]
-                            ]
-            
-                    }, {
+                            ]            
+                    },
+                    {
+                        name: 'Female error',
+                        type: 'errorbar',
+                        color: femaleColor,
+                        lineWidth: 2,
+                        data: [
+                              [21,3.93,5.03],
+                              [35,3.48,4.08],
+                              [55,1.84,2.19],
+                              [75,0.74,1.16]
+                            ],
+                        tooltip: {
+                            pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                        }
+                    }, 
+
+                    {
                         name: 'Male',
                         color: 'rgba(119, 152, 191, .5)',
                         data: [
@@ -385,6 +434,21 @@ $(document).ready(function(){
                               [55,6.14],
                               [75,2.96]
                             ]
+                    },
+                    {
+                        name: 'Male error',
+                        type: 'errorbar',
+                        color: maleColor,
+                        lineWidth: 2,
+                        data: [
+                                  [21,12.17,14.15],
+                                  [35,10.30,11.29],
+                                  [55,5.79,6.50],
+                                  [75,2.46,3.45]
+                                ],
+                        tooltip: {
+                            pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                        }
                     },
                     {
                         type: 'line',
