@@ -2,10 +2,10 @@
 html, body, div, span, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+small, strong, var, b, i, dl, dt, dd, ol, 
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
+ aside, canvas, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section, summary,
 time, mark, audio, video {
   margin: 0;
@@ -16,12 +16,20 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
+sub,sup{
+ 	font-size:xx-small; vertical-align:top;
+
+  padding: 0;
+  border: 0;
+  
+}
 
 /* =============================================================================
    Section Windows
    ========================================================================== */
 
 .section1,
+.section2,
 .section3,
 .section4,
 .section5,
@@ -53,16 +61,6 @@ time, mark, audio, video {
 }
 
 
-.section2{
-	height: 800px;
-	padding: 0; 
-	margin: 0; 
-	width: 100%; 
-	max-width: 1920px; 
-	position: relative; 
-	margin: 0 auto; 
-	box-shadow: 0 0 15px rgba(0,0,0,0.2);
-}
 /* =============================================================================
    Backgrounds
    ========================================================================== */
@@ -76,18 +74,18 @@ time, mark, audio, video {
 	background-color: #776F64;
 }
 #third { 
-	/*background: url(../img/bg-a.png) 50% 0 no-repeat fixed; */
 	background-color: #BAAE9E;
 	
 }
 #fourth { 
 	background-color: #659CA9;
-	/*background: url(../img/bg-b.png) 50% 0 no-repeat fixed; */
+	border-bottom: 2px dotted black;
+	border-top: 1px solid black;
 }
 #fifth { 
 	background-color: #A4BEC3;
 
-	/*background: url(../img/bg-a.png) 50% 0 no-repeat fixed; */
+
 }
 #sixth{
 	background-color: #F09C48;
@@ -147,6 +145,7 @@ time, mark, audio, video {
 
 #twentieth{
 	background-color: #AB5C97;
+
 }
 
 #twentyfirst{
@@ -180,16 +179,35 @@ time, mark, audio, video {
    Articles
    ========================================================================== */
 	
+
 #first article { 
 	width: 100%; 
 	top: 430px; 
 	position: absolute; 
 	text-align: center; 
 }	
+
+
 #second article,
 #third article,
 #fourth article,
 #fifth article,
+#sixth article,
+#seventh article,
+#eighth article,
+#ninth article,
+#tenth article,
+#eleventh article,
+#twelfth article,
+#thirteenth article,
+#fourteenth article,
+#fifteenth article,
+#sixteenth article,
+#seventeenth article,
+#eighteenth article,
+#nineteenth article,
+#twentieth article,
+#twentyfirst article,
 #end article { 
 	width: 90%; 
 	margin: 50px 0 0 50px;
@@ -197,23 +215,28 @@ time, mark, audio, video {
 	top: -1px;
 }
 
+
 	
 /* =============================================================================
    Text
    ========================================================================== */
 
+article{
+	margin: 0 0 25px 0;
+
+}
 article h1 { 
 	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
 	letter-spacing: 2px;
 	font-size: 80px;
-	margin: 0 0 25px 0; 
+
 }
 
 article h2{
 	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
 	letter-spacing: 2px;
 	font-size: 40px;
-	margin: 0 0 25px 0; 
+
 
 }
 
@@ -221,7 +244,7 @@ article h3{
 	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
 	letter-spacing: 2px;
 	font-size: 30px;
-	margin: 0 0 25px 0; 
+
 }
 article p { 
 	font-family: Helvetica;
@@ -250,6 +273,10 @@ article p {
 #third .object3,
 #fourth .object4,
 #fifth .object5,
+#sixth .object6,
+#eighth .object8,
+#tenth .object10,
+#twelfth .object12,
 #end .objectend {
 	padding: 0; 
 	margin: 0; 
@@ -260,6 +287,7 @@ article p {
 	min-height: 1000px;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+
 }
 
 #first .object1 { 
@@ -276,7 +304,22 @@ article p {
 	background-image: url(../img/illu/Virgin.png); 
 }
 #fifth .object5 { 
-	background-image: url(../img/object5.png); 
+	background-image: url(../img/illu/Virgin.png); 
+
+}
+#sixth .object6{
+	background-image: url(../img/illu/Virgin.png); 
+}
+#eighth .object8{
+	background-image: url(../img/illu/Virgin.png); 
+}
+
+#tenth .object10{
+	background-image: url(../img/illu/Virgin.png); 	
+}
+
+#twelfth .object12{
+		background-image: url(../img/illu/Virgin.png); 
 }
 #end .objectend { 
 	background: url(../img/objectend.png) 50% 100px no-repeat fixed; 
