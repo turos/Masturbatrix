@@ -226,14 +226,14 @@ article{
 
 }
 article h1 { 
-	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
+	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
 	letter-spacing: 2px;
 	font-size: 80px;
 
 }
 
 article h2{
-	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
+	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 100; 
 	letter-spacing: 2px;
 	font-size: 40px;
 
@@ -247,21 +247,22 @@ article h3{
 
 }
 article p { 
-	font-family: Helvetica;
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
 	font-size: 16px;
 }
 
 #first article,
 #third article,
 #fifth article {
-	color: #fff;
+	color: #F7F0D2;
 } 
 
 #second article,
 #forth article,
 #end article {
-	color: #000;
+	color: #232429;
 } 
+
    
    
 /* =============================================================================
@@ -300,7 +301,7 @@ article p {
 }
 #second .object2 { 
 	/* background-image: url(../img/object2.png); */
-	background-image: url(../img/illu/Satisfaction.png);
+	background-image: url(../img/illu/Satisfaction2.png);
 }
 #third .object3 { 
 	/*background-image: url(../img/illu/Satisfaction.png);*/
