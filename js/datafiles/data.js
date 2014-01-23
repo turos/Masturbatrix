@@ -440,7 +440,7 @@ $(document).ready(function(){
 
     case "sexpartners":
 
-        $('#container').highcharts({
+        $('#container_sexpartners').highcharts({
                 chart: {
                     type: 'scatter',
                     zoomType: 'xy'

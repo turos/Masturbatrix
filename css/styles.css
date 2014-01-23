@@ -227,14 +227,15 @@ article{
 }
 article h1 { 
 	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-size: 80px;
+	font-weight: bold;
 
 }
 
 article h2{
 	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-size: 40px;
 
 
@@ -242,23 +243,38 @@ article h2{
 
 article h3{
 	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-size: 30px;
+	padding-top: 20px;
+
+
+}
+
+article h4{
+	font-family: Helvetica;
+	letter-spacing: 1px;
+	font-size: 20px;
 
 }
 article p { 
+	padding-top: 20px;
 	font-family: Helvetica;
 	font-size: 16px;
+}
+li{
+	font-family: Helvetica;
 }
 
 #first article,
 #third article,
-#fifth article {
+#fifth article,
+#seventh article{
 	color: #fff;
 } 
 
 #second article,
 #forth article,
+#sixth article,
 #end article {
 	color: #000;
 } 
@@ -274,13 +290,19 @@ article p {
 #fourth .object4,
 #fifth .object5,
 #sixth .object6,
+#seventh .object7,
 #eighth .object8,
 #tenth .object10,
 #twelfth .object12,
+#fourteenth .object14,
+#sixteenth .object16,
+#eighteenth .object18,
+#twentieth .object20,
+#twentytwo .object22,
 #end .objectend {
 	padding: 0; 
 	margin: 0; 
-	width: 100%; 
+	width: 100%;
 	max-width: 1920px; 
 	position: relative; 
 	margin: 0 auto; 
@@ -308,19 +330,36 @@ article p {
 
 }
 #sixth .object6{
-	background-image: url(../img/illu/Virgin.png); 
+	background-image: url(../img/illu/Sexpartners.png); 
 }
 #eighth .object8{
-	background-image: url(../img/illu/Virgin.png); 
+	background-image: url(../img/illu/Length2.png); 
 }
 
 #tenth .object10{
-	background-image: url(../img/illu/Virgin.png); 	
+	background-image: url(../img/illu/Religion.png); 	
 }
 
 #twelfth .object12{
-		background-image: url(../img/illu/Virgin.png); 
+	background-image: url(../img/illu/Shame.png); 
 }
+
+#fourteenth .object14 {
+	background-image: url(../img/illu/Old.png);
+}
+
+#sixteenth .object16 {
+	background-image: url(../img/illu/Money.png);
+}
+
+#eighteenth .object18 {
+	background-image:  url(../img/illu/When.png);
+}
+
+#twentieth .object20 {
+	background-image: url(../img/illu/Thinking.png);
+}
+
 #end .objectend { 
 	background: url(../img/objectend.png) 50% 100px no-repeat fixed; 
 }
