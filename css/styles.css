@@ -277,6 +277,11 @@ article p {
 #eighth .object8,
 #tenth .object10,
 #twelfth .object12,
+#fourteenth .object14,
+#sixteenth .object16,
+#eighteenth .object18,
+#twentieth .object20,
+#twentytwo .object22,
 #end .objectend {
 	padding: 0; 
 	margin: 0; 
@@ -308,19 +313,36 @@ article p {
 
 }
 #sixth .object6{
-	background-image: url(../img/illu/Virgin.png); 
+	background-image: url(../img/illu/Sexpartners.png); 
 }
 #eighth .object8{
-	background-image: url(../img/illu/Virgin.png); 
+	background-image: url(../img/illu/Length2.png); 
 }
 
 #tenth .object10{
-	background-image: url(../img/illu/Virgin.png); 	
+	background-image: url(../img/illu/Religion.png); 	
 }
 
 #twelfth .object12{
-		background-image: url(../img/illu/Virgin.png); 
+	background-image: url(../img/illu/Shame.png); 
 }
+
+#fourteenth .object14 {
+	background-image: url(../img/illu/Old.png);
+}
+
+#sixteenth .object16 {
+	background-image: url(../img/illu/Money.png);
+}
+
+#eighteenth .object18 {
+	background-image:  url(../img/illu/When.png);
+}
+
+#twentieth .object20 {
+	background-image: url(../img/illu/Thinking.png);
+}
+
 #end .objectend { 
 	background: url(../img/objectend.png) 50% 100px no-repeat fixed; 
 }
