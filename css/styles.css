@@ -226,13 +226,17 @@ article{
 
 }
 article h1 { 
+
 	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
 	letter-spacing: 2px;
+
 	font-size: 80px;
+	font-weight: bold;
 
 }
 
 article h2{
+
 	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 100; 
 	letter-spacing: 2px;
 	font-size: 40px;
@@ -242,23 +246,44 @@ article h2{
 
 article h3{
 	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-size: 30px;
+	padding-top: 20px;
+
+
+}
+
+article h4{
+	font-family: Helvetica;
+	letter-spacing: 1px;
+	font-size: 20px;
 
 }
 article p { 
+
 	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
+
+	padding-top: 20px;
+
 	font-size: 16px;
+}
+li{
+	font-family: Helvetica;
 }
 
 #first article,
 #third article,
 #fifth article {
 	color: #F7F0D2;
+}
+
+#seventh article{
+	color: #fff;
 } 
 
 #second article,
 #forth article,
+#sixth article,
 #end article {
 	color: #232429;
 } 
@@ -275,6 +300,7 @@ article p {
 #fourth .object4,
 #fifth .object5,
 #sixth .object6,
+#seventh .object7,
 #eighth .object8,
 #tenth .object10,
 #twelfth .object12,
@@ -286,7 +312,7 @@ article p {
 #end .objectend {
 	padding: 0; 
 	margin: 0; 
-	width: 100%; 
+	width: 100%;
 	max-width: 1920px; 
 	position: relative; 
 	margin: 0 auto; 
