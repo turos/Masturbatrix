@@ -13,6 +13,8 @@
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
         <!-- <link rel="stylesheet" href="css/normalize.css"> -->
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+SC' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="css/main.css"> 
         <link rel="stylesheet" href="css/styles.css">
 
@@ -55,15 +57,7 @@
 
       <article>
           <h1>HOW SATISFIED YOU ARE<BR> WITH YOUR SEXLIFE?</h1>
-        <select id="selectTopic">
-          <option value="default" selected="selected">Choose a topic</option>
-          <option value="satisfaction">Satisfaction with own sexlife</option>
-          <option value="relationshiplength">Length of relationship</option>
-          <option value="sexpartners">Amount of sexpartners</option>
-          <option value="religion">Religion</option>
-          <option value="health">Health</option>        
-          <option value="age">Age</option>
-        </select>  
+        
       </article>
 
         
@@ -75,20 +69,25 @@
     <section id="third" class="section3" data-speed="6" data-type="background">     
        <div class="object3" data-type="sprite" data-offsetY="1250" data-Xposition="80%" data-speed="2"></div>
 
-        
-      <article>    
+      <article>
+            <div class="answerheader" >
+                <h1>YES, MASTURBATION IS COMPENSATION.</h1>
+                <h2>FOR MEN.</h2>
+                <br/>
+                <button class="btn_showhide" value="satisfaction" >Show me proof</button>
+            </div>
 
-        
-    
-          <div width="100%" >
-
-              <div style="max-width: 45%; height: 600px; margin: 0 auto; float: left;">
-                <h2>MASTURBATION IS COMPENSATION (FOR MEN)</h2>
-                      <p>Men masturbate more, and they seem to use it as a substitute for sex with their partner. So if they're satisfied with their current sexlife, they masturbate less, and if they're not satisfied; they take matters into their own hands.</p> </br>
+            <div class="conclusion" id="conclusion_satisfaction" >
+                     <p>Men masturbate more, and they seem to use it as a substitute for sex with their partner. So if they're satisfied with their current sexlife, they masturbate less, and if they're not satisfied; they take matters into their own hands.</p> </br>
 
                       <p>For women there doesn't seem to be any correlation between how satisfied they are with their sexlife and how much they masturbate. This is one of the few stats with a clear difference between men and women.</p>
-                                   
-                      <h3>Data quality</h3>
+            </div>
+
+            <div id="data_satisfaction" style="display:none;">                
+             
+                  <div class="dataleft" id="container_satisfaction" ></div>
+                  <div class="dataright" id="quality_satisfaction" >
+                    <h3>Data quality</h3>
                       <p>For men, the averages are rather close to the regression line, which gives it a reasonably high R<sup>2</sup> value. This tells us that it's fair to draw the line. The trend line is currently based on a linear regression shown beneath, but a logarithmic curve based on the formula "y = -4,253ln(x) + 13,102" would have increased the R<sup>2</sup> value to 0,90426. This was however not possible to show using Highcharts.</p>
                       <p>For women, the R<sup>2</sup> value is minimal even though the averages are close to the regression line. This is because there is no correlation between the x and the y value - in other words: the female masturbation level is close to being a constant.</p>
 
@@ -105,15 +104,9 @@
                         <li>Regression function: y = -0,0191x + 3,1187</li>
                         <li>R<sup>2</sup>: 0,0034</li>
                       </ul>  
-
-              </div>
-              <div id="container_satisfaction" style="width: 51%; height: 500px; margin: 0 auto ; padding: 5px; float: right; "></div>
-
-          </div>
-    
-      
-
-      </article>
+                  </div>
+            </div>
+        </article>
 
 
 
@@ -127,7 +120,7 @@
     
         <article>
         <h1>IN THE ZONE <BR> OR GOING AT IT ALONE</h1>
-          <h1>Does the amount of sexual partners matter?<h1>
+          <h2>Does the amount of sexual partners matter?<h2>
       </article>  
             
     </section> <!--close #fourth .section4-->
@@ -207,12 +200,23 @@ Or, we've stumbled upon an addiction.</p>
       <!-- <div class="object5" data-type="sprite" data-offsetY="1500" data-Xposition="70%" data-speed="2"></div> -->
 
       <article>
-      <div width="100%">
-        <div style="max-width: 45%; height: 600px; margin: 0 auto; float: left;">
-                <h1>OH YES</h1>
-                <h2>THE OLDER YOU GET, <br>THE LESS YOU PET</h2>
-                <p>This conclusion is one of the clearest among our different metrics. For both men and women, monosexual amusement decreases with age. And for men, the decline is even much steeper than for women. <br>It really gives the term "the good ol days" a new meaning.</p>
+        <div class="answerheader">
+          
+                  <h1>OH YES</h1>
+                  <h2>THE OLDER YOU GET, <br>THE LESS YOU PET</h2>
+                  <button class="btn_showhide" value="age" >Show me proof</button>                
+        </div>
 
+               
+
+        <div class="conclusion" id="conclusion_age" >
+                 <p>This conclusion is one of the clearest among our different metrics. For both men and women, monosexual amusement decreases with age. And for men, the decline is even much steeper than for women. <br>It really gives the term "the good ol days" a new meaning.</p>
+        </div>
+
+        <div id="data_age" style="display:none;">                
+       
+            <div class="dataleft" id="container_age" ></div>
+            <div class="dataright" id="quality_age" >
                 <h3>Data Quality</h3>
                 <p>The averages are very close to the regression line, which gives us a high R<sup>2</sup> value.</p>
                 <h4>Men</h4>
@@ -227,11 +231,13 @@ Or, we've stumbled upon an addiction.</p>
                   <li>Regression function: y = -0,0681x + 5,9709</li>
                   <li>R<sup>2</sup>: 0,98823</li>
                 </ul>
-                   
+            </div>
+        </div>
 
-              </div>
-              <div id="container_age" style="width: 51%; height: 500px; margin: 0 auto ; padding: 5px; float: right; "></div>
-      </div>
+
+
+
+
       </article>
       </section> <!--close #seventh .section7-->  
       
@@ -244,7 +250,7 @@ Or, we've stumbled upon an addiction.</p>
       <article>
         <h1>IF YOU'VE BEEN TOGETHER<br> LONGER THAN KIM & KANYE</h1>
         <br>
-        <h1>DOES THE LENGTH OF YOUR <br> RELATIONSHIP MATTER?</h1>
+        <h2>DOES THE LENGTH OF YOUR <br> RELATIONSHIP MATTER?</h2>
       </article>
       </section> <!--close #eighth .section8-->  
       
@@ -256,17 +262,24 @@ Or, we've stumbled upon an addiction.</p>
       <!-- <div class="object5" data-type="sprite" data-offsetY="1500" data-Xposition="70%" data-speed="2"></div> -->
 
       <article>
-            <div width="100%" >
 
-              <div style="max-width: 45%; height: 600px; margin: 0 auto; padding: 10px; float: left;">
-                      
-                      <h1>YES. BUT ALSO NO. </h1>
-                      <p>The longer the relationship, the less masturbation. Men and women are surprisingly parrallel when it comes to the decline rate in masturbation, though men are approximately 50% higher in actual numbers. There is, however, a risk that the real cause of the trend is not the length of the relationship, but the age of the respondant, ie. the older you are, the less you masturbate.  </p>
-                      
-                      <h3>Data quality</h3>
-                      <p>In this graph we have included errors bars based on SEM (Standard Deviations of the Mean). These error bars tell us that doing regression lines on this dataset is somewhat a stretch. Even though, for men, the R<sup>2</sup> value tells us that our averages are reasonably close to the regression line, the error bars show that the amount of respondants especially wihin the short half of the relationships is simply too low to conclude a clear trend.</p>
+            <div class="answerhead" >
+              <h1>YES. BUT NO. </h1>
+              <h2>There is a trend, but maybe the length of the relationship is not the real cause.</h2>
+              <button class="btn_showhide" value="relationship">Show me proof</button>  
+            </div>
 
-                      <p>For women, the R<sup>2</sup></p>
+            <div class="conclusion" id="conclusion_relationship">
+              <p>The longer the relationship, the less masturbation. Men and women are surprisingly parrallel when it comes to the decline rate in masturbation, though men are approximately 50% higher in actual numbers. There is, however, a risk that the real cause of the trend is not the length of the relationship, but the age of the respondant, ie. the older you are, the less you masturbate.  </p>
+            </div>
+
+            <div id="data_relationship" style="display: none;">
+              
+              <div class="dataleft" id="container_relationship"></div>
+
+              <div class="dataright" id="quality_relationship">
+                  <h3>Data quality</h3>
+                      <p>The error bars tell us that doing regression lines on this dataset is somewhat a stretch. Even though, for men, the R<sup>2</sup> value tells us that our averages are reasonably close to the regression line, the error bars show that the amount of respondants especially wihin the short half of the relationships is simply too low to conclude a clear trend.</p>
 
                       <h4>Men</h4>
                       <ul>
@@ -280,12 +293,10 @@ Or, we've stumbled upon an addiction.</p>
                         <li>Sample size: 1390</li>
                         <li>Regression function: y = -0,927ln(x) + 4,3206</li>
                         <li>R<sup>2</sup>: 0,3499</li>
-                      </ul>                                   
+                      </ul>         
 
+                </div>
               </div>
-              <div id="container_relationship" style="max-width: 51%; height: 500px; margin: 0 auto ; padding: 50px; float: right; "></div>
-
-          </div>
         </article>
            
       </section> <!--close #ninth .section9-->  
@@ -308,25 +319,29 @@ Or, we've stumbled upon an addiction.</p>
        
       <!-- <div class="object5" data-type="sprite" data-offsetY="1500" data-Xposition="70%" data-speed="2"></div> -->
 
+        <article>
+                    <div class="answerheader" >
+                        <h1>YES.</h1>
+                        <h2>IF YOU'RE A BUDDHIST OR JEWISH MAN</h2>
+                        <br/>
+                        <button class="btn_showhide" value="religion">Show me proof</button>
+                    </div>
 
-      <article>
-            <div width="100%" >
+                    <div class="conclusion" id="conclusion_religion" >
+                               <p>Religion can improve many aspects of ones life, but it does not seem to have any meaningful impact on your level of masturbation. <br>We looked at data from people of Christian faith, Islamic faith as well as Atheists, and found it to be a pretty even spread. <br>Women of Islamic faith seem to masturbate more than their counterparts, but the sample size is so small that it's hard to draw conclusions. <br>Men, in general, are responsible for the biggest load.<br>
+                      </p>
+                    </div>
 
-              <div style="max-width: 45%; height: 600px; margin: 0 auto; padding: 10px; float: left;">
-                      
-                      <h1>YES.</h1>
-                      <h2>IF YOU'RE A WOMAN.</h2>
-
-                      <h3>Data Quality</h3>
-                      <p>Religion can improve many aspects of ones life, but it does not seem to have any meaningful impact on your level of masturbation. <br>We looked at data from people of Christian faith, Islamic faith as well as Atheists, and found it to be a pretty even spread. <br>Women of Islamic faith seem to masturbate more than their counterparts, but the sample size is so small that it's hard to draw conclusions. <br>Men, in general, are responsible for the biggest load.<br>
-                      <br>Need some numbers on sample size (how many muslims/christians/etc)<sup>2</sup></p>
-                                 
-
-              </div>
-              <div id="container_religion" style="max-width: 51%; height: 500px; margin: 0 auto ; padding: 50px; float: right; "></div>
-
-          </div>
+                    <div id="data_religion" style="display:none;">                
+                     
+                          <div class="dataleft" id="container_religion" ></div>
+                          <div class="dataright" id="quality_religion" >
+                            <h3>Data quality</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+                    </div>
         </article>
+
+
       </section> <!--close #eleventh .section11-->  
       
       
@@ -384,31 +399,64 @@ Or, we've stumbled upon an addiction.</p>
       </section> <!--close #fifteenth .section15-->  
       
 
-      <!-------------------------------------------------- Section 16 -------------------------------------------------->
+      <!-------------------------------------------------- Section 16 INCOME (Q) -------------------------------------------------->
       
       <section id="sixteenth" class="section16" data-speed="8" data-type="background">
        
       <div class="object16" data-type="sprite" data-offsetY="7600" data-Xposition="70%" data-speed="2"></div> 
 
       <article>
-        <h1>TAKING PILLS AND PUTTING LOTION IN MOTION</h1>
-        <h2>Does your health matter?</h2>
+        <h1>FILTHY RICH OR RICH FILTH?</h1>
+        <h2>Does your income matter?</h2>
           </article> 
       </section> <!--close #sixteenth .section16-->  
       
 
 
-      <!-------------------------------------------------- Section 17 -------------------------------------------------->
+      <!-------------------------------------------------- Section 17 INCOME (A) -------------------------------------------------->
       
       <section id="seventeenth" class="section17" data-speed="8" data-type="background">
        <div class="anchor" name="sector17"></div>
       <!-- <div class="object5" data-type="sprite" data-offsetY="1500" data-Xposition="70%" data-speed="2"></div> -->
 
-      <article>
-        <h1>YES</h1>
-        <h2>But only if you're a man</h2>
-              <p>There is an increase of 33% in masturbation between men who are in good health and those who are in bad health.<br> Men with bad health, are trying to validate if sexual healing  works, and more so, if masturbation counts.<br> And boy, are they trying. <br>Women, as always, seem satisfied either way.</p>
-          </article> 
+        <article>
+                    <div class="answerheader" >
+                        <h1>YES.</h1>
+                        <h2>THE MORE MONEY, THE LESS HONEY</h2>
+                        <br/>
+                        <button class="btn_showhide" value="income" >Show me proof</button>
+                    </div>
+
+                    <div class="conclusion" id="conclusion_income" >
+                              <p>KICKE: something around the trend that the more you make, the less you masturbate. This is especially true for men, apparently</p>                      
+                    </div>
+
+                    <div id="data_income" style="display:none;">                
+                     
+                          <div class="dataleft" id="container_income" ></div>
+                          <div class="dataright" id="quality_income" >
+                              <h3>Data quality</h3>
+                              <h4>Men</h4>
+                                <ul>
+                                  <li>Sample size: 1312</li>
+                                  <li>Regression function: y = -5*10<sup>-6</sup>x + 11,091</li>
+                                  <li>R<sup>2</sup>: 0,43310</li>
+                                </ul>
+
+                                <h4>Women</h4>
+                                <ul>
+                                  <li>Sample size: 1219</li>
+                                  <li>Regression function: y = -2*10<sup>-6</sup>x + 3,8879</li>
+                                  <li>R<sup>2</sup>: 0,319872</li>
+                                </ul>  
+                          </div>
+                    </div>
+        </article>
+
+
+
+
+
       </section> <!--close #seventeenth .section17-->  
       
 
@@ -440,33 +488,76 @@ Or, we've stumbled upon an addiction.</p>
       </section> <!--close #nineteenth .section19-->  
       
 
-      <!-------------------------------------------------- Section 20 -------------------------------------------------->
+      <!-------------------------------------------------- Section 20 HEALTH (Q) -------------------------------------------------->
       
       <section id="twentieth" class="section20" data-speed="8" data-type="background">
        
       <div class="object20" data-type="sprite" data-offsetY="9450" data-Xposition="90%" data-speed="2"></div> 
 
       <article>
-        <h1>TWENTIETH</h1>
-        <h2>hip</h2>
-              <p>Section  paragraph.</p> 
+        <h1>#20: HEALTH</h1>
+        <h2>Does your health matter?</h2>
           </article> 
       </section> <!--close #twentieth .section20-->  
       
 
-      <!-------------------------------------------------- Section 21 -------------------------------------------------->
+      <!-------------------------------------------------- Section 21 HEALTH (A) -------------------------------------------------->
       
       <section id="twentyfirst" class="section21" data-speed="8" data-type="background">
        
       <!-- <div class="object5" data-type="sprite" data-offsetY="1500" data-Xposition="70%" data-speed="2"></div> -->
 
-      <article>
-        <h1>TWENTYFIRST</h1>
-        <h2>hip</h2>
-              <p>Section  paragraph.</p> 
-           </article>
+        <article>
+            <div class="answerheader" >
+                <h1>YES.</h1>
+                <h2>Sick men seek comfort.</h2>
+                <br/>
+                <button class="btn_showhide" value="health" >Show me proof</button>
+            </div>
+
+            <div class="conclusion" id="conclusion_health" >
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+
+            <div id="data_health" style="display:none;">                
+             
+                  <div class="dataleft" id="container_health" ></div>
+                  <div class="dataright" id="quality_health" >
+                    <h3>Data quality</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+            </div>
+
+                     
+
+         
+        </article>
       </section> <!--close #twentyfirst .section21s-->  
 
+
+<!-- 
+
+  //// TEMPLATE FOR THE ANSWER-PAGES
+        <article>
+                    <div class="answerheader" >
+                        <h1>Header</h1>
+                        <h2>Subheader</h2>
+                        <br/>
+                        <button class="btn_showhide" value="XXX" >Show me proof</button>
+                    </div>
+
+                    <div class="conclusion" id="conclusion_XXX" >
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+
+                    <div id="data_XXX" style="display:none;">                
+                     
+                          <div class="dataleft" id="container_XXX" ></div>
+                          <div class="dataright" id="quality_XXX" >
+                            <h3>Data quality</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+                    </div>
+        </article>
+-->
       
 
 

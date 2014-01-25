@@ -3,340 +3,246 @@ $(document).ready(function(){
 	var femaleColor = "rgba(223, 83, 83, 1)";
 	var txt;
     var chartBackgroundColor = 'rgba(255,255,255,0.005)';
-	
-
-    ////////////////////////////////////////////
-    //                                        // 
-    //      SATISFACTION WITH OWN SEXLIFE     //
-    //                                        //
-    ////////////////////////////////////////////
-
-	$('#container_satisfaction').highcharts({
-            chart: {
-                type: 'scatter',
-                zoomType: 'xy',
-                backgroundColor: chartBackgroundColor
-            },            
-            title: {
-                text: 'Masturbation level based on satisfaction with own sexlife',                
-            },
-            subtitle: {
-                text: 'Source: Så ligger Sverige'
-            },
-            xAxis: {
-                title: {
-                    enabled: true,
-                    text: 'Satisfaction level 1-5 (the higher number, the more satisfied)'
-                },
-                startOnTick: false,
-                endOnTick: false,
-                showLastLabel: true
-            },
-            yAxis: {
-                title: {
-                    text: 'Avg. masturbations per month'
-                }
-            },
-            legend: {
-                layout: 'vertical',
-                align: 'right',
-                verticalAlign: 'top',
-                x: 00,
-                y: 30,
-                floating: true,
-                backgroundColor: '#ffffff',
-                borderWidth: 1
-            },
-            plotOptions: {
-                scatter: {
-                    marker: {
-                        radius: 5,
-                        states: {
-                            hover: {
-                                enabled: true,
-                                lineColor: 'rgb(100,100,100)'
-                            }
-                        }
-                    },
-                    states: {
-                        hover: {
-                            marker: {
-                                enabled: false
-                            }
-                        }
-                    },
-                    tooltip: {
-                        headerFormat: '<b>{series.name}</b><br>',
-                        pointFormat: 'Satisfaction level {point.x}, {point.y} masturbations'
-                    }
-                }
-            },
-            series: [{
-                name: 'Female',
-                color: femaleColor,
-                data: [[1,2.96],[2,3.77],[3,2.37],[4,2.88],[5,3.32]]
     
-            },
-            {
-                name: 'Female error',
-                type: 'errorbar',
-                color: femaleColor,
-                lineWidth: 2,
-                data: [
-                          [1,2.60,3.34],
-                          [2,3.27,4.27],
-                          [3,2.07,2.67],
-                          [4,2.62,3.14],
-                          [5,2.83,3.81]
-                        ],
-                tooltip: {
-                    pointFormat: '(error range: {point.low}-{point.high})<br/>'
-                }
-            }, 
-            {                
-                name: 'Male',
-                color: maleColor,
-                data: [[1, 13.85], [2, 9.31],[3, 7.72],[4,6.91],[5,7.36]]
-            },
-            {
-                name: 'Male error',
-                type: 'errorbar',
-                color: maleColor,
-                lineWidth: 2,
-                data: [
-                          [1,12.61,15.09],
-                          [2,8.64,9.98],
-                          [3,7.16,8.27],
-                          [4,6.50,7.31],
-                          [5,6.52,8.21]
-                        ],
-                tooltip: {
-                    pointFormat: '(error range: {point.low}-{point.high})<br/>'
-                }
-            },
-            {
-                type: 'line',
-                name: 'Male regression line',
-                color: maleColor,
-                data: [[1,12.11],[5,5.96]],
-                marker: {
-                    enabled: false
-                },
-                states: {
-                    hover: {
-                        lineWidth: 0
-                    }
-                },
-                enableMouseTracking: false
-            },
-            {
-                type: 'line',
-                name: 'Female regression line',
-                color: femaleColor,
-                data: [[1,3.1],[5,3.02]],
-                marker: {
-                    enabled: false
-                },
-                states: {
-                    hover: {
-                        lineWidth: 0
-                    }
-                },
-                enableMouseTracking: false
-            }]
-        });
 
-
-    ////////////////////////////////////////////
-    //                                        // 
-    //      LENGTH OF RELATIONSHIP            //
-    //                                        //
-    ////////////////////////////////////////////
-
-    $("#container_relationship").highcharts({
-            chart: {
-                type: 'scatter',
-                zoomType: 'xy',
-                backgroundColor: chartBackgroundColor
-            },
-            title: {
-                text: 'Masturbation level based on length of current relationship'
-            },
-            subtitle: {
-                text: 'Source: Så ligger Sverige'
-            },
-            xAxis: {
-                type: 'logarithmic',
-                minorTickInterval: 0.1,
-                title: {
-                    enabled: true,
-                    text: 'Length of relationship in years'
-                },
-                startOnTick: false,
-                endOnTick: false,
-                showLastLabel: true
-            },
-            yAxis: {
-                title: {
-                    text: 'Avg. masturbations per month'
-                }
-            },
-            legend: {
-                layout: 'vertical',
-                align: 'right',
-                verticalAlign: 'top',
-                x: 00,
-                y: 30,
-                floating: true,
-                backgroundColor: '#ffffff',
-                borderWidth: 1
-            },
-            plotOptions: {
-                scatter: {
-                    marker: {
-                        radius: 5,
-                        states: {
-                            hover: {
-                                enabled: true,
-                                lineColor: 'rgb(100,100,100)'
-                            }
-                        }
-                    },
-                    states: {
-                        hover: {
-                            marker: {
-                                enabled: false
-                            }
-                        }
-                    },
-                    tooltip: {
-                        headerFormat: '<b>{series.name}</b><br>',
-                        pointFormat: 'Length of relationship in years {point.x}, {point.y} masturbations'
-                    }
-                }
-            },
-            series: [{
-                name: 'Female',
-                color: femaleColor,
-                data: [
-                      [0.01,4.23],
-                      [0.05,11.75],
-                      [0.17,10.33],
-                      [0.50,1.83],
-                      [1.00,2.82],
-                      [3.00,3.59],
-                      [7.00,2.49],
-                      [15.00,1.53]
-                    ]
     
-            }, 
+    //ONLY LOAD THE NECESSARY DATA
+    $(function() {
+        function loadData(topic) {
+            
+
+            switch(topic)
             {
-                name: 'Female error',
-                type: 'errorbar',
-                color: femaleColor,
-                lineWidth: 2,
-                data: [
-                      [0.01, 3.83,4.63],
-                      [0.05, 7.01,16.49],
-                      [0.17, 7.54,13.13],
-                      [0.5, 1.31,2.36],
-                      [1.00, 2.11,3.53],
-                      [3.00, 2.98,4.19],
-                      [7.00, 2.25,2.74],
-                      [15.00, 1.39,1.67]
-                    ],
-                tooltip: {
-                    pointFormat: '(error range: {point.low}-{point.high})<br/>'
-                }
-            },
-            {
-                name: 'Male',
-                color: maleColor,
-                data: [
-                          [0.01,12.43],
-                          [0.05,10.71],
-                          [0.17,11.10],
-                          [0.50,9.16],
-                          [1.00,9.02],
-                          [3.00,8.00],
-                          [7.00,6.94],
-                          [15.00,5.10]
+
+                case "health":
+                    $('#container_health').highcharts({
+                        chart: {
+                            type: 'column'
+                        },
+                        title: {
+                            text: 'Masturbation based on health'
+                        },
+                        subtitle: {
+                            text: 'Source: Så ligger Sverige'
+                        },
+                        xAxis: {
+                            categories: [
+                                'Good',
+                                'Neither good or bad' ,
+                                'Bad',
+                                'Prolonged Illness',
+                                'Lasting damage'                    
+                            ]
+                        },
+                        yAxis: {
+                            min: 0,
+                            title: {
+                                text: 'Average masturbations per month'
+                            }
+                        },
+                        tooltip: {
+                            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+                            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                                '<td style="padding:0"><b>{point.y:.1f} masturbations per month</b></td></tr>',
+                            footerFormat: '</table>',
+                            shared: true,
+                            useHTML: true
+                        },
+                        plotOptions: {
+                            column: {
+                                pointPadding: 0.2,
+                                borderWidth: 0
+                            }
+                        },
+                        series: [{
+                            name: 'Men',
+                            color: maleColor,
+                            data: [8.05,9.04,12.31,6.8,7.12]
+                
+                        }, 
+                        {
+                            name: 'Male error',
+                            type: 'errorbar',
+                            color: 'black',
+                            lineWidth: 2,
+                            data: [
+                                      [7.71,8.4],
+                                      [8.47,9.61],
+                                      [10.11,14.51],
+                                      [5.53,8.07],
+                                      [5.19,9.04]
+                                    ],
+                            tooltip: {
+                                pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                            }
+                        },
+                        {
+                            name: 'Women',
+                            color: femaleColor,
+                            data: [2.73,3.27,2.9,2.46,2.81]
+                        },
+                        {
+                            name: 'Female error',
+                            type: 'errorbar',
+                            color: 'black',
+                            lineWidth: 2,
+                            data: [
+                                      [2.54,2.91],
+                                      [2.93,3.61],
+                                      [2.17,3.63],
+                                      [1.9,3.03],
+                                      [2.07,3.56]
+                            ],
+                            tooltip: {
+                                        pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                                    }
+                                }, 
                         ]
-            },
-            {
-            name: 'Male error',
-            type: 'errorbar',
-            color: maleColor,
-            lineWidth: 2,
-            data: [
-                      [0.01,11.81,13.04],
-                      [0.05,7.53,13.90],
-                      [0.17,7.07,15.13],
-                      [0.5,5.77,12.54],
-                      [1.0,7.18,10.85],
-                      [3.00,7.18,8.82],
-                      [7.00,6.34,7.55],
-                      [15.00,4.79,5.41]
-                ],
-            tooltip: {
-                pointFormat: '(error range: {point.low}-{point.high})<br/>'
-            }
-        },
-        {
-            type: 'line',
-            name: 'Male regression line',
-            color: maleColor,
-            data: [[0.01,12.783],[15,6.08]],
-            marker: {
-                enabled: false
-            },
-            states: {
-                hover: {
-                    lineWidth: 0
-                }
-            },
-            enableMouseTracking: false
-        },
-        {
-            type: 'line',
-            name: 'Female regression line',
-            color: femaleColor,
-            data: [[0.01,8.59],[15,1.81]],
-            marker: {
-                enabled: false
-            },
-            states: {
-                hover: {
-                    lineWidth: 0
-                }
-            },
-            enableMouseTracking: false
-        }       
-        ]
-
-    });
+                    });
+                    break;
 
 
+                case "satisfaction":
+                        $('#container_satisfaction').highcharts({
+                            chart: {
+                                type: 'scatter',
+                                zoomType: 'xy',
+                                backgroundColor: chartBackgroundColor
+                            },            
+                            title: {
+                                text: 'Masturbation level based on satisfaction with own sexlife',                
+                            },
+                            subtitle: {
+                                text: 'Source: Så ligger Sverige'
+                            },
+                            xAxis: {
+                                title: {
+                                    enabled: true,
+                                    text: 'Satisfaction level 1-5 (the higher number, the more satisfied)'
+                                },
+                                startOnTick: false,
+                                endOnTick: false,
+                                showLastLabel: true
+                            },
+                            yAxis: {
+                                title: {
+                                    text: 'Avg. masturbations per month'
+                                }
+                            },
+                            legend: {
+                                layout: 'vertical',
+                                align: 'right',
+                                verticalAlign: 'top',
+                                x: 00,
+                                y: 30,
+                                floating: true,
+                                backgroundColor: '#ffffff',
+                                borderWidth: 1
+                            },
+                            plotOptions: {
+                                scatter: {
+                                    marker: {
+                                        radius: 5,
+                                        states: {
+                                            hover: {
+                                                enabled: true,
+                                                lineColor: 'rgb(100,100,100)'
+                                            }
+                                        }
+                                    },
+                                    states: {
+                                        hover: {
+                                            marker: {
+                                                enabled: false
+                                            }
+                                        }
+                                    },
+                                    tooltip: {
+                                        headerFormat: '<b>{series.name}</b><br>',
+                                        pointFormat: 'Satisfaction level {point.x}, {point.y} masturbations'
+                                    }
+                                }
+                            },
+                            series: [{
+                                name: 'Female',
+                                color: femaleColor,
+                                data: [[1,2.96],[2,3.77],[3,2.37],[4,2.88],[5,3.32]]
+                    
+                            },
+                            {
+                                name: 'Female error',
+                                type: 'errorbar',
+                                color: femaleColor,
+                                lineWidth: 2,
+                                data: [
+                                          [1,2.60,3.34],
+                                          [2,3.27,4.27],
+                                          [3,2.07,2.67],
+                                          [4,2.62,3.14],
+                                          [5,2.83,3.81]
+                                        ],
+                                tooltip: {
+                                    pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                                }
+                            }, 
+                            {                
+                                name: 'Male',
+                                color: maleColor,
+                                data: [[1, 13.85], [2, 9.31],[3, 7.72],[4,6.91],[5,7.36]]
+                            },
+                            {
+                                name: 'Male error',
+                                type: 'errorbar',
+                                color: maleColor,
+                                lineWidth: 2,
+                                data: [
+                                          [1,12.61,15.09],
+                                          [2,8.64,9.98],
+                                          [3,7.16,8.27],
+                                          [4,6.50,7.31],
+                                          [5,6.52,8.21]
+                                        ],
+                                tooltip: {
+                                    pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                                }
+                            },
+                            {
+                                type: 'line',
+                                name: 'Male regression line',
+                                color: maleColor,
+                                data: [[1,12.11],[5,5.96]],
+                                marker: {
+                                    enabled: false
+                                },
+                                states: {
+                                    hover: {
+                                        lineWidth: 0
+                                    }
+                                },
+                                enableMouseTracking: false
+                            },
+                            {
+                                type: 'line',
+                                name: 'Female regression line',
+                                color: femaleColor,
+                                data: [[1,3.1],[5,3.02]],
+                                marker: {
+                                    enabled: false
+                                },
+                                states: {
+                                    hover: {
+                                        lineWidth: 0
+                                    }
+                                },
+                                enableMouseTracking: false
+                            }]
+                        });
+
+                break;
 
 
-    ////////////////////////////////////////////
-    //                                        // 
-    //      YOUR HEALTH                       //
-    //                                        //
-    ////////////////////////////////////////////
-
-
-
-
-
-    ////////////////////////////////////////////
-    //                                        // 
-    //      YOUR AGE                          //
-    //                                        //
-    ////////////////////////////////////////////
-
-
-    $('#container_age').highcharts({
+                case "age":
+                    $('#container_age').highcharts({
                     chart: {
                         type: 'scatter',
                         zoomType: 'xy',
@@ -479,8 +385,216 @@ $(document).ready(function(){
                         },
                         enableMouseTracking: false
                     }]
-                });
-  
+                });  
+                break;
+
+
+
+                case "relationship":
+                        $('#container_relationship').highcharts({
+                                chart: {
+                                    type: 'scatter',
+                                    zoomType: 'xy',
+                                    backgroundColor: chartBackgroundColor
+                                },
+                                title: {
+                                    text: 'Masturbation level based on length of current relationship'
+                                },
+                                subtitle: {
+                                    text: 'Source: Så ligger Sverige'
+                                },
+                                xAxis: {
+                                    type: 'logarithmic',
+                                    minorTickInterval: 0.1,
+                                    title: {
+                                        enabled: true,
+                                        text: 'Length of relationship in years'
+                                    },
+                                    startOnTick: false,
+                                    endOnTick: false,
+                                    showLastLabel: true
+                                },
+                                yAxis: {
+                                    title: {
+                                        text: 'Avg. masturbations per month'
+                                    }
+                                },
+                                legend: {
+                                    layout: 'vertical',
+                                    align: 'right',
+                                    verticalAlign: 'top',
+                                    x: 00,
+                                    y: 30,
+                                    floating: true,
+                                    backgroundColor: '#ffffff',
+                                    borderWidth: 1
+                                },
+                                plotOptions: {
+                                    scatter: {
+                                        marker: {
+                                            radius: 5,
+                                            states: {
+                                                hover: {
+                                                    enabled: true,
+                                                    lineColor: 'rgb(100,100,100)'
+                                                }
+                                            }
+                                        },
+                                        states: {
+                                            hover: {
+                                                marker: {
+                                                    enabled: false
+                                                }
+                                            }
+                                        },
+                                        tooltip: {
+                                            headerFormat: '<b>{series.name}</b><br>',
+                                            pointFormat: 'Length of relationship in years {point.x}, {point.y} masturbations'
+                                        }
+                                    }
+                                },
+                                series: [{
+                                    name: 'Female',
+                                    color: femaleColor,
+                                    data: [
+                                          [0.01,4.23],
+                                          [0.05,11.75],
+                                          [0.17,10.33],
+                                          [0.50,1.83],
+                                          [1.00,2.82],
+                                          [3.00,3.59],
+                                          [7.00,2.49],
+                                          [15.00,1.53]
+                                        ]
+                        
+                                }, 
+                                {
+                                    name: 'Female error',
+                                    type: 'errorbar',
+                                    color: femaleColor,
+                                    lineWidth: 2,
+                                    data: [
+                                          [0.01, 3.83,4.63],
+                                          [0.05, 7.01,16.49],
+                                          [0.17, 7.54,13.13],
+                                          [0.5, 1.31,2.36],
+                                          [1.00, 2.11,3.53],
+                                          [3.00, 2.98,4.19],
+                                          [7.00, 2.25,2.74],
+                                          [15.00, 1.39,1.67]
+                                        ],
+                                    tooltip: {
+                                        pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                                    }
+                                },
+                                {
+                                    name: 'Male',
+                                    color: maleColor,
+                                    data: [
+                                              [0.01,12.43],
+                                              [0.05,10.71],
+                                              [0.17,11.10],
+                                              [0.50,9.16],
+                                              [1.00,9.02],
+                                              [3.00,8.00],
+                                              [7.00,6.94],
+                                              [15.00,5.10]
+                                            ]
+                                },
+                                {
+                                name: 'Male error',
+                                type: 'errorbar',
+                                color: maleColor,
+                                lineWidth: 2,
+                                data: [
+                                          [0.01,11.81,13.04],
+                                          [0.05,7.53,13.90],
+                                          [0.17,7.07,15.13],
+                                          [0.5,5.77,12.54],
+                                          [1.0,7.18,10.85],
+                                          [3.00,7.18,8.82],
+                                          [7.00,6.34,7.55],
+                                          [15.00,4.79,5.41]
+                                    ],
+                                tooltip: {
+                                    pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                                }
+                            },
+                            {
+                                type: 'line',
+                                name: 'Male regression line',
+                                color: maleColor,
+                                data: [[0.01,12.783],[15,6.08]],
+                                marker: {
+                                    enabled: false
+                                },
+                                states: {
+                                    hover: {
+                                        lineWidth: 0
+                                    }
+                                },
+                                enableMouseTracking: false
+                            },
+                            {
+                                type: 'line',
+                                name: 'Female regression line',
+                                color: femaleColor,
+                                data: [[0.01,8.59],[15,1.81]],
+                                marker: {
+                                    enabled: false
+                                },
+                                states: {
+                                    hover: {
+                                        lineWidth: 0
+                                    }
+                                },
+                                enableMouseTracking: false
+                            }       
+                            ]
+
+                        });
+
+                break;
+
+
+                case "income":
+
+                break;
+
+
+
+                default:
+                    console.log("hitting default in switch");
+                break;
+
+            }
+        }
+
+
+        window.loadData=loadData;
+    });
+
+    
+    ////////////////////////////////////////////
+    //                                        // 
+    //      SATISFACTION WITH OWN SEXLIFE     //
+    //                                        //
+    ////////////////////////////////////////////
+   
+
+
+
+
+    ////////////////////////////////////////////
+    //                                        // 
+    //      LENGTH OF RELATIONSHIP            //
+    //                                        //
+    ////////////////////////////////////////////
+
+
+
+
+    
 
 
     ////////////////////////////////////////////
@@ -859,18 +973,289 @@ $('#container_religion').highcharts({
             series: [{
                 name: 'Men',
                 color: maleColor,
-                data: [11.24390244,6.763948498,  8.192813322 ,7.705882353]
+                data: [11.24,6.76,  8.19 ,7.71]
     
-            }, {
+            }, 
+            {
+                name: 'Male error',
+                type: 'errorbar',
+                color: 'black',
+                lineWidth: 2,
+                data: [
+                          [9.35,13.14],
+                          [6.18,7.35],
+                          [7.88,8.51],
+                          [5.56,9.85]
+                        ],
+                tooltip: {
+                    pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                }
+            },
+            {
                 name: 'Women',
                 color: femaleColor,
-                data: [1.741935484,2.149560117,  3.005252101,5.647058824]
-    
-            }
+                data: [1.74,2.15, 3.01,5.65]
+            },
+            {
+                name: 'Female error',
+                type: 'errorbar',
+                color: 'black',
+                lineWidth: 2,
+                data: [
+                          [1.30,2.19],
+                          [1.86,2.44],
+                          [2.82,3.19],
+                          [2.62,8.67]
+                ],
+                tooltip: {
+                            pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                        }
+                    }, 
             ]
         });
 
+
+    ////////////////////////////////////////////
+    //                                        // 
+    //      INCOME                            //
+    //                                        //
+    ////////////////////////////////////////////
+
+    $('#container_income').highcharts({
+                    chart: {
+                        type: 'scatter',
+                        zoomType: 'xy',
+                        backgroundColor: chartBackgroundColor
+                    },
+                    title: {
+                        text: 'Masturbation level based on income'
+                    },
+                    subtitle: {
+                        text: 'Source: Så ligger Sverige'
+                    },
+                    xAxis: {
+                        title: {
+                            enabled: true,
+                            text: 'Annual household income'
+                        },
+                        startOnTick: false,
+                        endOnTick: false,
+                        showLastLabel: true,
+                        lineColor: '#000000',
+                        min: 100000
+
+                    },
+                    yAxis: {
+                        title: {
+                            text: 'Avg. masturbations per month'
+                        },
+                        gridLineColor: '#F09C48'
+                    },
+                    legend: {
+                        layout: 'vertical',
+                        align: 'right',
+                        verticalAlign: 'top',
+                        x: 00,
+                        y: 30,
+                        floating: true,
+                        backgroundColor: '#ffffff',
+                        borderWidth: 1
+                    },
+                    plotOptions: {
+                        scatter: {
+                            marker: {
+                                radius: 5,
+                                states: {
+                                    hover: {
+                                        enabled: true,
+                                        lineColor: 'rgb(100,100,100)'
+                                    }
+                                }
+                            },
+                            states: {
+                                hover: {
+                                    marker: {
+                                        enabled: false
+                                    }
+                                }
+                            },
+                            tooltip: {
+                                headerFormat: '<b>{series.name}</b><br>',
+                                pointFormat: 'Income {point.x}, {point.y} masturbations'
+                            }
+                        }
+                    },
+                    series: [{
+                        name: 'Female',
+                        color: 'rgba(223, 83, 83, .5)',
+                        data: [
+                                  [100000,5.1],
+                                  [110000,3.22],
+                                  [135000,2.56],
+                                  [175000,4.44],
+                                  [225000,4.08],
+                                  [275000,3.59],
+                                  [325000,2.92],
+                                  [400000,2.12],
+                                  [500000,1.87],
+                                  [600000,1.9],
+                                  [700000,2.72],
+                                  [800000,1.64],
+                                  [900000,2.03],
+                                  [1000000,5.56],
+                                  [1100000,1.08],
+                                  [1200000,0.5],
+                                  [1300000,1.11]
+                                ]          
+                    },
+                    {
+                        name: 'Female error',
+                        type: 'errorbar',
+                        color: femaleColor,
+                        lineWidth: 2,
+                        data: [
+                                  [100000,4.33,5.86],
+                                  [110000,2.63,3.82],
+                                  [135000,1.72,3.40],
+                                  [175000,3.43,5.45],
+                                  [225000,3.29,4.86],
+                                  [275000,2.97,4.21],
+                                  [325000,2.33,3.50],
+                                  [400000,1.89,2.34],
+                                  [500000,1.62,2.12],
+                                  [600000,1.39,2.41],
+                                  [700000,2.15,3.28],
+                                  [800000,1.27,2.00],
+                                  [900000,1.38,2.68],
+                                  [1000000,3.63,7.48],
+                                  [1100000,0.67,1.5],
+                                  [1200000,0.15,0.85],
+                                  [1300000,0.63,1.59]
+                                ],
+                        tooltip: {
+                            pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                        }
+                    }, 
+
+                    {
+                        name: 'Male',
+                        color: 'rgba(119, 152, 191, .5)',
+                        data: [
+                          [100000,13.64],
+                          [110000,12.89],
+                          [135000,9.43],
+                          [175000,11.33],
+                          [225000,8.94],
+                          [275000,8.90],
+                          [325000,10.33],
+                          [400000,8.18],
+                          [500000,5.46],
+                          [600000,6.45],
+                          [700000,7.36],
+                          [800000,6.92],
+                          [900000,5.89],
+                          [1000000,5.32],
+                          [1100000,10.28],
+                          [1200000,1.67],
+                          [1300000,8.19]
+                        ]
+                    },
+                    {
+                        name: 'Male error',
+                        type: 'errorbar',
+                        color: maleColor,
+                        lineWidth: 2,
+                        data: [
+                              [100000,12.16,15.11],
+                              [110000,10.94,14.84],
+                              [135000,7.47,11.39],
+                              [175000,9.47,13.18],
+                              [225000,7.81,10.06],
+                              [275000,7.64,10.15],
+                              [325000,9.31,11.36],
+                              [400000,7.44,8.92],
+                              [500000,4.87,6.04],
+                              [600000,5.80,7.11],
+                              [700000,6.55,8.17],
+                              [800000,5.85,7.99],
+                              [900000,4.93,6.84],
+                              [1000000,4.35,6.30],
+                              [1100000,7.19,13.37],
+                              [1200000,0.31,3.03],
+                              [1300000,5.81,10.58]
+                            ],
+                        tooltip: {
+                            pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                        }
+                    },
+                    {
+                        type: 'line',
+                        name: 'Male regression line',
+                        data: [[10000,11.041],[1300000,4.591]],
+                        marker: {
+                            enabled: false
+                        },
+                        states: {
+                            hover: {
+                                lineWidth: 0
+                            }
+                        },
+                        enableMouseTracking: false
+                    },
+                    {
+                        type: 'line',
+                        name: 'Female regression line',
+                        color: femaleColor,
+                        data: [[10000,3.868],[1300000,1.288]],
+                        marker: {
+                            enabled: false
+                        },
+                        states: {
+                            hover: {
+                                lineWidth: 0
+                            }
+                        },
+                        enableMouseTracking: false
+                    }]
+                });
+  
+    ////////////////////////////////////////////
+    //                                        // 
+    //      HEALTH                            //
+    //                                        //
+    ////////////////////////////////////////////
+
+    $(".btn_health").on('click', function(){
+
+
+        if($(this).html()=="Show me the proof"){
+            console.log("show data");
+
+        }
+        else{
+            console.log("go back");
+
+        }
+        
+  
+        $("#answ_health").hide();
+        $("#data_health").fadeIn();
+
+
+    
+    });
+
+
+
+
+
+
+//final closing
 });
+
+
+
+
 
 
 
