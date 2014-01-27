@@ -6,7 +6,7 @@ $(document).ready(function(){
         e.preventDefault();
         var anchor = $(this).attr('anchor');
         var top = $('div[name='+anchor+']').offset().top;
-        $('html, body').animate({scrollTop:top},2000);
+        $('html, body').animate({scrollTop:top},1500);
     });
 
 
