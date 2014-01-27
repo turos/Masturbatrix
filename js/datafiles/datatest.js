@@ -111,7 +111,8 @@ $(document).ready(function(){
                 case "health":
                     $('#container_health').highcharts({
                         chart: {
-                            type: 'column'
+                            type: 'column',
+                            backgroundColor: '#DFBED9'
                         },
                         title: {
                             text: 'Masturbation based on health'
@@ -132,7 +133,9 @@ $(document).ready(function(){
                             min: 0,
                             title: {
                                 text: 'Average masturbations per month'
-                            }
+                            },
+                            gridLineColor: '#AB5C97'
+
                         },
                         tooltip: {
                             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
@@ -214,14 +217,19 @@ $(document).ready(function(){
                                     enabled: true,
                                     text: 'Satisfaction level 1-5 (the higher number, the more satisfied)'
                                 },
+
+                                gridLineColor: '#776F64',
                                 startOnTick: false,
                                 endOnTick: false,
-                                showLastLabel: true
+                                showLastLabel: true,
+                                lineColor: '#776F64'
                             },
                             yAxis: {
                                 title: {
                                     text: 'Avg. masturbations per month'
-                                }
+                                },
+
+                                gridLineColor: '#776F64'
                             },
                             legend: {
                                 layout: 'vertical',
@@ -240,7 +248,7 @@ $(document).ready(function(){
                                         states: {
                                             hover: {
                                                 enabled: true,
-                                                lineColor: 'rgb(100,100,100)'
+                                                lineColor: 'rgb(119,111,100)'
                                             }
                                         }
                                     },
@@ -356,7 +364,7 @@ $(document).ready(function(){
                         startOnTick: false,
                         endOnTick: false,
                         showLastLabel: true,
-                        lineColor: '#000000'
+                        lineColor: '#F09C48'
 
                     },
                     yAxis: {
@@ -506,12 +514,16 @@ $(document).ready(function(){
                                     },
                                     startOnTick: false,
                                     endOnTick: false,
-                                    showLastLabel: true
+                                    showLastLabel: true,
+                                    lineColor: '#787F68',
+
                                 },
                                 yAxis: {
                                     title: {
                                         text: 'Avg. masturbations per month'
-                                    }
+                                    },
+
+                                    gridLineColor: '#787F68'
                                 },
                                 legend: {
                                     layout: 'vertical',
@@ -750,8 +762,10 @@ $(document).ready(function(){
                 case "religion":
                     $('#container_religion').highcharts({
                             chart: {
-                                type: 'column'
+                                type: 'column',
+                                backgroundColor: '#8D8695'
                             },
+
                             title: {
                                 text: 'Masturbation based on faith'
                             },
