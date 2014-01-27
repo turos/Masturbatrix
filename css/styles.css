@@ -71,7 +71,7 @@ sub,sup{
 
 #first { 
 	/*background: url(../img/bg-a.png) 50% 0 no-repeat fixed; */
-	background-color: black;
+	background-color: #95a5a6;
 }
 #second { 
 	/*background: url(../img/bg-b.png) 50% 0 no-repeat fixed; */
@@ -298,8 +298,8 @@ article h2{
 }
 
 article h3{
-	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
-	letter-spacing: 1px;
+	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
+	letter-spacing: 2px;
 	font-size: 30px;
 	padding-top: 20px;
 
@@ -307,8 +307,8 @@ article h3{
 }
 
 article h4{
-	font-family: Helvetica;
-	letter-spacing: 1px;
+	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
+	letter-spacing: 2px;
 	font-size: 20px;
 
 }
@@ -323,7 +323,13 @@ article p {
 
 
 li{
-	font-family: Helvetica;
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
+	letter-spacing: 1px;
+}
+
+p {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
+	letter-spacing: 1px;
 }
 
 #whiteheading {
@@ -331,6 +337,8 @@ li{
 }
 
 .summary {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
+	letter-spacing: 2px;
 	font-size: 20px;
 }
 
@@ -369,6 +377,24 @@ li{
 }.btn_showhide:active {
 	position:relative;
 	top:1px;
+}
+
+.emphasisetwo {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #776F64;
+}
+
+.emphasisethree {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #d6791b;
+}
+
+.emphasisfour {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #5c5070;
 }
 
 
