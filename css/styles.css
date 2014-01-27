@@ -218,8 +218,16 @@ div .answerheader{
 }
 
 #topicmenu{
-	margin-left: 25%;
+	margin: 0 auto;
+	/*margin-left: 22%;*/
+
+	/*padding:20px;*/
 }
+#topicmenu td{
+	padding: 10px;
+	padding-top: 50px;
+}
+
 
 
 
@@ -345,6 +353,10 @@ li{
 
 .done{
 	color: red;
+}
+
+.uparrow{
+	float: right;
 }
    
    
