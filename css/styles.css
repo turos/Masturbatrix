@@ -49,6 +49,10 @@ sub,sup{
 .section19,
 .section20,
 .section21,
+.section22,
+.section23,
+.section24,
+.section25,
 .end-section {  
 	height: 1000px;
 	padding: 0; 
@@ -79,8 +83,6 @@ sub,sup{
 }
 #fourth { 
 	background-color: #659CA9;
-	border-bottom: 2px dotted black;
-	border-top: 1px solid black;
 }
 #fifth { 
 	background-color: #A4BEC3;
@@ -152,6 +154,19 @@ sub,sup{
 	background-color: #DFBED9;	
 }
 
+#twentysecond{
+	background-color: #EE797A;
+}
+#twentythird{
+	background-color: #E4AEB1;	
+}
+#twentyfourth{
+	background-color: #535254;
+}
+#twentyfifth{
+	background-color: #A9A9A9;
+}
+
 #end { 
 	background: url(../img/bg-b.png) 50% bottom no-repeat fixed; 
 }
@@ -174,6 +189,40 @@ sub,sup{
    Images
    ========================================================================== */	
 
+/* =============================================================================
+   Special DIVS
+   ========================================================================== */
+
+div .dataleft{
+	width: 60%; 
+	min-height: 400px; 
+	margin: 0 auto; 
+	padding: 50px; 
+	float: left;	
+}
+div .dataright{
+	margin-left: 60%;
+	padding-top: 45px;
+}
+
+div .conclusion{
+	max-width: 90%; 
+	height: 500px; 
+	margin: 0 auto; 
+	padding: 10px; 
+	float: left;
+}
+
+div .answerheader{
+	width: 100%;
+}
+
+#topicmenu{
+	margin-left: 25%;
+}
+
+
+
 
 /* =============================================================================
    Articles
@@ -182,7 +231,7 @@ sub,sup{
 
 #first article { 
 	width: 100%; 
-	top: 430px; 
+	top: 300px; 
 	position: absolute; 
 	text-align: center; 
 }	
@@ -208,6 +257,10 @@ sub,sup{
 #nineteenth article,
 #twentieth article,
 #twentyfirst article,
+#twentysecond article,
+#twentythird article,
+#twentyfourth article,
+#twentyfifth article,
 #end article { 
 	width: 90%; 
 	margin: 50px 0 0 50px;
@@ -267,6 +320,8 @@ article p {
 
 	font-size: 16px;
 }
+
+
 li{
 	font-family: Helvetica;
 }
@@ -288,6 +343,9 @@ li{
 	color: #232429;
 } 
 
+.done{
+	color: red;
+}
    
    
 /* =============================================================================
@@ -308,7 +366,8 @@ li{
 #sixteenth .object16,
 #eighteenth .object18,
 #twentieth .object20,
-#twentytwo .object22,
+#twentysecond .object22,
+#twentyfourth .object24,
 #end .objectend {
 	padding: 0; 
 	margin: 0; 
@@ -368,6 +427,14 @@ li{
 
 #twentieth .object20 {
 	background-image: url(../img/illu/Thinking.png);
+}
+
+#twentysecond .object22{
+
+}
+
+#twentyfourth .object24{
+
 }
 
 #end .objectend { 
