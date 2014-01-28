@@ -206,6 +206,11 @@ div .dataright{
 }
 
 div .conclusion{
+	
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
+	letter-spacing: 2px;
+	font-size: 20px;
+	max-width: 90%; 
 	max-width: 50%; 
 	height: 500px; 
 	margin: 0 auto; 
@@ -303,7 +308,6 @@ article h2{
 	font-size: 40px;
 	padding-bottom: 20px;
 
-
 }
 
 article h3{
@@ -311,7 +315,6 @@ article h3{
 	letter-spacing: 2px;
 	font-size: 30px;
 	padding-top: 20px;
-
 
 }
 
@@ -337,16 +340,6 @@ li{
 p {
 	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
 	letter-spacing: 1px;
-}
-
-#whiteheading {
-	color: #000;
-}
-
-.summary {
-	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
-	letter-spacing: 2px;
-	font-size: 20px;
 }
 
 .btn_showhide {
@@ -386,19 +379,19 @@ p {
 	top:1px;
 }
 
-.emphasisetwo {
+#emptwo {
 	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
 	letter-spacing: 1px;
 	color: #776F64;
 }
 
-.emphasisethree {
+#empthree {
 	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
 	letter-spacing: 1px;
 	color: #d6791b;
 }
 
-.emphasisfour {
+#empfour {
 	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
 	letter-spacing: 1px;
 	color: #5c5070;
