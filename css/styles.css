@@ -472,13 +472,13 @@ p {
 }
 #second .object2 { 
 	/* background-image: url(../img/object2.png); */
-	background-image: url(../img/illu/Satisfaction2.png);
+	background-image: url(../img/illu/Thinking.png);
 }
 #third .object3 { 
 	/*background-image: url(../img/illu/Satisfaction.png);*/
 }
 #fourth .object4 { 
-	background-image: url(../img/illu/Virgin.png); 
+	background-image: url(../img/illu/Occupation.png); 
 }
 #fifth .object5 { 
 	background-image: url(../img/illu/Virgin.png); 
@@ -497,7 +497,7 @@ p {
 }
 
 #tenth .object10{
-	background-image: url(../img/kicke.png); 	
+	background-image: url(../img/illu/Location.png); 	
 }
 
 #twelfth .object12{
