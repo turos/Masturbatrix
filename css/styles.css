@@ -522,7 +522,7 @@ p {
 }
 
 #sixteenth .object16 {
-	background-image: url(../img/illu/Satisfaction.png);
+	background-image: url(../img/illu/Satisfaction2.png);
 }
 
 #eighteenth .object18 {
@@ -542,5 +542,5 @@ p {
 }
 
 #end .objectend { 
-	background: url(../img/illu/grupp26.png) 50% 100px no-repeat fixed;
+	background: url(../img/illu/grupp26.png) 50% 30px no-repeat fixed;
 }
