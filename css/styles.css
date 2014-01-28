@@ -596,7 +596,7 @@ p {
 }
 
 #twentieth .object20 {
-	background-image: url(../img/kicke.png);
+	background-image: url(../img/illu/Master.png);
 }
 
 #twentysecond .object22{
@@ -608,5 +608,5 @@ p {
 }
 
 #end .objectend { 
-	background: url(../img/illu/grupp26.png) 70% 130px no-repeat fixed;
+	background: url(../img/illu/grupp26.png) 65% 100px no-repeat fixed;
 }
