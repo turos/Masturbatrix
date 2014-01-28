@@ -206,7 +206,12 @@ div .dataright{
 }
 
 div .conclusion{
-
+	
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
+	letter-spacing: 2px;
+	font-size: 20px;
+	max-width: 90%; 
+	max-width: 50%; 
 	height: 500px; 
 	margin: 0 auto; 
 	padding: 10px; 
