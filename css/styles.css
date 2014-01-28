@@ -221,12 +221,10 @@ div .answerheader{
 
 div #about{
 	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
-
 	font-size: 16px;
 	position: absolute;
-	top: -200px;
+	top: -100px;
 	right: 30px;
-
 	
 }
 
@@ -256,10 +254,11 @@ div #about{
 
 #first article { 
 	width: 100%; 
-	top: 200px; 
+	top: 100px; 
 	height:800px;
 	position: absolute; 
 	text-align: center; 
+	margin-top: 30px;
 }	
 
 
