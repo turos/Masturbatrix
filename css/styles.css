@@ -220,10 +220,13 @@ div .answerheader{
 }
 
 div #about{
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
 
+	font-size: 16px;
 	position: absolute;
 	top: -200px;
 	right: 30px;
+
 	
 }
 
@@ -339,12 +342,12 @@ article h3{
 #specialheader2 {
 	font-size: 130px;
 	position:relative;
-	left: 250px;
+	left: 200px;
 }
 
 #specialheader3 {
 	position:relative;
-	left: 650px;
+	left: 600px;
 }
 
 article h4{
@@ -592,7 +595,7 @@ p {
 }
 
 #twentieth .object20 {
-	background-image: url(../img/kicke.png);
+	background-image: url(../img/illu/Master.png);
 }
 
 #twentysecond .object22{
@@ -604,5 +607,5 @@ p {
 }
 
 #end .objectend { 
-	background: url(../img/illu/grupp26.png) 50% 130px no-repeat fixed;
+	background: url(../img/illu/grupp26.png) 65% 100px no-repeat fixed;
 }
