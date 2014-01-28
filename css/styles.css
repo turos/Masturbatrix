@@ -247,7 +247,9 @@ div #about{
 	padding-top: 50px;
 }
 
-
+.clickable{
+	cursor: pointer; cursor: hand;
+}
 
 
 
@@ -325,6 +327,8 @@ article h2{
 
 }
 
+
+
 article h3{
 	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
 	letter-spacing: 2px;
@@ -360,8 +364,9 @@ p {
 .summary {
 
 	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-size: 20px;
+	line-height: 26pt;
 }
 
 .btn_showhide {
@@ -396,6 +401,7 @@ p {
 	outline: none;
 }.btn_showhide:hover {
 	background-color:#f0f0f0;
+
 }.btn_showhide:active {
 	position:relative;
 	top:1px;
@@ -462,6 +468,7 @@ p {
 
 .uparrow{
 	float: right;
+	font-size: 48pt;
 }
    
    
@@ -560,5 +567,5 @@ p {
 }
 
 #end .objectend { 
-	background: url(../img/illu/grupp26.png) 50% 30px no-repeat fixed;
+	background: url(../img/illu/grupp26.png) 50% 130px no-repeat fixed;
 }
