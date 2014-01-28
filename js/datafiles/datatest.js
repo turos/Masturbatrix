@@ -17,7 +17,8 @@ $(document).ready(function(){
                 case "thinking":
                     $('#container_thinking').highcharts({
                             chart: {
-                                type: 'column'
+                                type: 'column',
+                                backgroundColor: chartBackgroundColor
                             },
                             title: {
                                 text: 'Masturbation based on how often you think about sex'
@@ -667,7 +668,8 @@ $(document).ready(function(){
                 case "occupation":
                     $('#container_occupation').highcharts({
                         chart: {
-                            type: 'column'
+                            type: 'column',
+                            backgroundColor: '#F7F0D2'
                         },
                         title: {
                             text: 'Masturbation based on occupation'
