@@ -1,13 +1,14 @@
 $(document).ready(function(){
 	
 
-	//scrolling down to anchor
+	//scrolling to anchor
 	$('a[anchor]').click(function(e) {
         e.preventDefault();
         var anchor = $(this).attr('anchor');
         var top = $('div[name='+anchor+']').offset().top;
-        $('html, body').animate({scrollTop:top},2000);
+        $('html, body').animate({scrollTop:top},1500);
     });
+
 
 
 
@@ -19,7 +20,7 @@ $(document).ready(function(){
 		if($(this).html()=="Show me proof"){
 			$(this).html("Back to conclusion");
 			$("#conclusion_" + topic).hide();
-			console.log("#data_" + topic);
+			//console.log("#data_" + topic);
 			$("#data_" + topic).fadeIn();
 			loadData(topic);
 		}

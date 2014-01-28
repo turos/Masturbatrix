@@ -71,7 +71,7 @@ sub,sup{
 
 #first { 
 	/*background: url(../img/bg-a.png) 50% 0 no-repeat fixed; */
-	background-color: black;
+	background-color: #95a5a6;
 }
 #second { 
 	/*background: url(../img/bg-b.png) 50% 0 no-repeat fixed; */
@@ -138,15 +138,15 @@ sub,sup{
 }
 
 #eighteenth{
-	background-color: #893012;	
+	background-color: #535254;;	
 }
 #nineteenth{
-	background-color: #A05845;
+	background-color: #A9A9A9;
 
 }
 
 #twentieth{
-	background-color: #AB5C97;
+	background-color: #E4AEB1;	
 
 }
 
@@ -206,7 +206,7 @@ div .dataright{
 }
 
 div .conclusion{
-	max-width: 90%; 
+	max-width: 50%; 
 	height: 500px; 
 	margin: 0 auto; 
 	padding: 10px; 
@@ -218,8 +218,16 @@ div .answerheader{
 }
 
 #topicmenu{
-	margin-left: 25%;
+	margin: 0 auto;
+	/*margin-left: 22%;*/
+
+	/*padding:20px;*/
 }
+#topicmenu td{
+	padding: 10px;
+	padding-top: 50px;
+}
+
 
 
 
@@ -298,8 +306,8 @@ article h2{
 }
 
 article h3{
-	font-family: Helvetica, Georgia, "Times New Roman", Times, serif;
-	letter-spacing: 1px;
+	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
+	letter-spacing: 2px;
 	font-size: 30px;
 	padding-top: 20px;
 
@@ -307,8 +315,8 @@ article h3{
 }
 
 article h4{
-	font-family: Helvetica;
-	letter-spacing: 1px;
+	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
+	letter-spacing: 2px;
 	font-size: 20px;
 
 }
@@ -319,12 +327,86 @@ article p {
 	padding-top: 20px;
 
 	font-size: 16px;
+
+
 }
 
 
 li{
-	font-family: Helvetica;
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
+	letter-spacing: 1px;
 }
+
+p {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
+	letter-spacing: 1px;
+}
+
+#whiteheading {
+	color: #000;
+}
+
+.summary {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
+.btn_showhide {
+	-moz-box-shadow:inset -49px -50px 0px -50px #fff000;
+	-webkit-box-shadow:inset -49px -50px 0px -50px #fff000;
+	box-shadow:inset -30px -02px 0px -50px #cecece;
+	background-color:#f0f0f0;
+	-webkit-border-top-left-radius:24px;
+	-moz-border-radius-topleft:24px;
+	border-top-left-radius:24px;
+	-webkit-border-top-right-radius:24px;
+	-moz-border-radius-topright:24px;
+	border-top-right-radius:24px;
+	-webkit-border-bottom-right-radius:24px;
+	-moz-border-radius-bottomright:24px;
+	border-bottom-right-radius:24px;
+	-webkit-border-bottom-left-radius:24px;
+	-moz-border-radius-bottomleft:24px;
+	border-bottom-left-radius:24px;
+	text-indent:0px;
+	border:5px solid #f0f0f0;
+	display:inline-block;
+	color: #9e9e9e;
+	font-family:Trebuchet MS;
+	font-size:17px;
+	font-weight:bold;
+	font-style:normal;
+	height:80px;
+	line-height:65px;
+	width:200px;
+	text-align:center;
+	outline: none;
+}.btn_showhide:hover {
+	background-color:#f0f0f0;
+}.btn_showhide:active {
+	position:relative;
+	top:1px;
+}
+
+.emphasisetwo {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #776F64;
+}
+
+.emphasisethree {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #d6791b;
+}
+
+.emphasisfour {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #5c5070;
+}
+
 
 #first article,
 #third article,
@@ -345,6 +427,10 @@ li{
 
 .done{
 	color: red;
+}
+
+.uparrow{
+	float: right;
 }
    
    
@@ -399,34 +485,39 @@ li{
 
 }
 #sixth .object6{
-	background-image: url(../img/illu/Sexpartners.png); 
+	background-image: url(../img/illu/Length2.png); 
 }
 #eighth .object8{
-	background-image: url(../img/illu/Length2.png); 
+	background-image: url(../img/illu/Old.png); 
+		/*-webkit-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+		-moz-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+		-ms-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+		-o-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+		filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));*/
 }
 
 #tenth .object10{
-	background-image: url(../img/illu/Religion.png); 	
+	background-image: url(../img/kicke.png); 	
 }
 
 #twelfth .object12{
-	background-image: url(../img/illu/Shame.png); 
+	background-image: url(../img/illu/Health.png); 
 }
 
 #fourteenth .object14 {
-	background-image: url(../img/illu/Old.png);
+	background-image: url(../img/illu/Religion.png);
 }
 
 #sixteenth .object16 {
-	background-image: url(../img/illu/Money.png);
+	background-image: url(../img/illu/Satisfaction.png);
 }
 
 #eighteenth .object18 {
-	background-image:  url(../img/illu/When.png);
+	background-image:  url(../img/illu/Sexpartners.png);
 }
 
 #twentieth .object20 {
-	background-image: url(../img/illu/Thinking.png);
+	background-image: url(../img/kicke.png);
 }
 
 #twentysecond .object22{
