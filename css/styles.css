@@ -220,14 +220,7 @@ div .answerheader{
 }
 
 div #about{
-	/*font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
-	letter-spacing: 2px;
-	font-size: 20px;
-	max-width: 90%; 
-	max-width: 50%; 
-	height: 500px; 
-	margin: 0 auto; 
-	padding: 10px; */
+
 	position: absolute;
 	top: -200px;
 	right: 30px;
@@ -247,7 +240,9 @@ div #about{
 	padding-top: 50px;
 }
 
-
+.clickable{
+	cursor: pointer; cursor: hand;
+}
 
 
 
@@ -302,6 +297,7 @@ div #about{
    Text
    ========================================================================== */
 
+
 article{
 	margin: 0 0 25px 0;
 
@@ -311,10 +307,12 @@ article h1 {
 	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
 	letter-spacing: 2px;
 
+
 	font-size: 80px;
 	font-weight: bold;
 
 }
+
 
 article h2{
 
@@ -331,6 +329,22 @@ article h3{
 	font-size: 30px;
 	padding-top: 20px;
 
+}
+
+
+#specialheader {
+	font-size: 130px;
+}
+
+#specialheader2 {
+	font-size: 130px;
+	position:relative;
+	left: 250px;
+}
+
+#specialheader3 {
+	position:relative;
+	left: 650px;
 }
 
 article h4{
@@ -360,8 +374,9 @@ p {
 .summary {
 
 	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	font-size: 20px;
+	line-height: 26pt;
 }
 
 .summaryright {
@@ -400,6 +415,7 @@ p {
 	outline: none;
 }.btn_showhide:hover {
 	background-color:#f0f0f0;
+
 }.btn_showhide:active {
 	position:relative;
 	top:1px;
@@ -490,6 +506,7 @@ p {
 
 .uparrow{
 	float: right;
+	font-size: 48pt;
 }
    
    
@@ -588,5 +605,5 @@ p {
 }
 
 #end .objectend { 
-	background: url(../img/illu/grupp26.png) 50% 30px no-repeat fixed;
+	background: url(../img/illu/grupp26.png) 50% 130px no-repeat fixed;
 }
