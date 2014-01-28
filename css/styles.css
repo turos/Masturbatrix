@@ -220,14 +220,7 @@ div .answerheader{
 }
 
 div #about{
-	/*font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
-	letter-spacing: 2px;
-	font-size: 20px;
-	max-width: 90%; 
-	max-width: 50%; 
-	height: 500px; 
-	margin: 0 auto; 
-	padding: 10px; */
+
 	position: absolute;
 	top: -200px;
 	right: 30px;
@@ -304,6 +297,7 @@ div #about{
    Text
    ========================================================================== */
 
+
 article{
 	margin: 0 0 25px 0;
 
@@ -313,10 +307,12 @@ article h1 {
 	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
 	letter-spacing: 2px;
 
+
 	font-size: 80px;
 	font-weight: bold;
 
 }
+
 
 article h2{
 
@@ -327,14 +323,28 @@ article h2{
 
 }
 
-
-
 article h3{
 	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
 	letter-spacing: 2px;
 	font-size: 30px;
 	padding-top: 20px;
 
+}
+
+
+#specialheader {
+	font-size: 130px;
+}
+
+#specialheader2 {
+	font-size: 130px;
+	position:relative;
+	left: 250px;
+}
+
+#specialheader3 {
+	position:relative;
+	left: 650px;
 }
 
 article h4{
@@ -367,6 +377,10 @@ p {
 	letter-spacing: 1px;
 	font-size: 20px;
 	line-height: 26pt;
+}
+
+.summaryright {
+	float: right;
 }
 
 .btn_showhide {
@@ -444,6 +458,30 @@ p {
 	color: #635a72;
 }
 
+#empeight {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #334C66;
+}
+
+#empnine {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #EE797A;
+}
+
+#empten {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #666666;
+}
+
+#empeleven {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 800; 
+	letter-spacing: 1px;
+	color: #EE797A;
+	font-size: 20px;
+}
 
 #first article,
 #third article,
