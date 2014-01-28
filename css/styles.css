@@ -302,6 +302,7 @@ div #about{
    Text
    ========================================================================== */
 
+
 article{
 	margin: 0 0 25px 0;
 
@@ -311,10 +312,12 @@ article h1 {
 	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
 	letter-spacing: 2px;
 
+
 	font-size: 80px;
 	font-weight: bold;
 
 }
+
 
 article h2{
 
@@ -325,12 +328,29 @@ article h2{
 
 }
 
+
 article h3{
 	font-family: 'Alegreya Sans SC', sans-serif; font-weight: 800; 
 	letter-spacing: 2px;
 	font-size: 30px;
 	padding-top: 20px;
 
+}
+
+
+#specialheader {
+	font-size: 130px;
+}
+
+#specialheader2 {
+	font-size: 130px;
+	position:relative;
+	left: 250px;
+}
+
+#specialheader3 {
+	position:relative;
+	left: 650px;
 }
 
 article h4{
