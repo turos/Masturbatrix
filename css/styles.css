@@ -219,6 +219,23 @@ div .answerheader{
 	width: 100%;
 }
 
+div #about{
+	/*font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
+	letter-spacing: 2px;
+	font-size: 20px;
+	max-width: 90%; 
+	max-width: 50%; 
+	height: 500px; 
+	margin: 0 auto; 
+	padding: 10px; */
+	position: absolute;
+	top: -200px;
+	right: 30px;
+	
+}
+
+
+
 #topicmenu{
 	margin: 0 auto;
 	/*margin-left: 22%;*/
@@ -241,7 +258,8 @@ div .answerheader{
 
 #first article { 
 	width: 100%; 
-	top: 300px; 
+	top: 200px; 
+	height:800px;
 	position: absolute; 
 	text-align: center; 
 }	
