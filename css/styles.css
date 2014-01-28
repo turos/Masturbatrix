@@ -323,12 +323,8 @@ article h4{
 article p { 
 
 	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
-
 	padding-top: 20px;
-
 	font-size: 16px;
-
-
 }
 
 
@@ -489,7 +485,7 @@ p {
 }
 #eighth .object8{
 	background-image: url(../img/illu/Old.png); 
-		/*-webkit-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
+	 /* -webkit-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
 		-moz-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
 		-ms-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));
 		-o-filter: drop-shadow(1px 1px 4px rgba(0,0,0,0.75));

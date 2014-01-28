@@ -756,9 +756,6 @@ $(document).ready(function(){
                 break;
 
 
-
-
-
                 case "religion":
                     $('#container_religion').highcharts({
                             chart: {
