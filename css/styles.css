@@ -206,10 +206,7 @@ div .dataright{
 }
 
 div .conclusion{
-	
-	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
-	letter-spacing: 2px;
-	font-size: 20px;
+
 	max-width: 90%; 
 	max-width: 50%; 
 	height: 500px; 
@@ -341,6 +338,13 @@ p {
 	letter-spacing: 1px;
 }
 
+.summary {
+
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 100; 
+	letter-spacing: 2px;
+	font-size: 20px;
+}
+
 .btn_showhide {
 	-moz-box-shadow:inset -49px -50px 0px -50px #fff000;
 	-webkit-box-shadow:inset -49px -50px 0px -50px #fff000;
@@ -393,7 +397,26 @@ p {
 #empfour {
 	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
 	letter-spacing: 1px;
-	color: #5c5070;
+	color: #659CA9;
+}
+
+#empfive {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #787F68;
+	
+}
+
+#empsix {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #535254;
+}
+
+#empseven {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #635a72;
 }
 
 

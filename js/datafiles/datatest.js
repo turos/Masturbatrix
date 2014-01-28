@@ -17,7 +17,8 @@ $(document).ready(function(){
                 case "thinking":
                     $('#container_thinking').highcharts({
                             chart: {
-                                type: 'column'
+                                type: 'column',
+                                backgroundColor:'rgba(255, 255, 255, 0.1)'
                             },
                             title: {
                                 text: 'Masturbation based on how often you think about sex'
@@ -112,7 +113,7 @@ $(document).ready(function(){
                     $('#container_health').highcharts({
                         chart: {
                             type: 'column',
-                            backgroundColor: '#DFBED9'
+                            backgroundColor:'rgba(255, 255, 255, 0.1)'
                         },
                         title: {
                             text: 'Masturbation based on health'
@@ -204,7 +205,7 @@ $(document).ready(function(){
                             chart: {
                                 type: 'scatter',
                                 zoomType: 'xy',
-                                backgroundColor: chartBackgroundColor
+                                backgroundColor:'rgba(255, 255, 255, 0.1)'
                             },            
                             title: {
                                 text: 'Masturbation level based on satisfaction with own sexlife',                
@@ -348,7 +349,7 @@ $(document).ready(function(){
                     chart: {
                         type: 'scatter',
                         zoomType: 'xy',
-                        backgroundColor: '#E9B07C'
+                        backgroundColor:'rgba(255, 255, 255, 0.1)'
                     },
                     title: {
                         text: 'Masturbation level based on age'
@@ -497,7 +498,7 @@ $(document).ready(function(){
                                 chart: {
                                     type: 'scatter',
                                     zoomType: 'xy',
-                                    backgroundColor: chartBackgroundColor
+                                    backgroundColor:'rgba(255, 255, 255, 0.1)'
                                 },
                                 title: {
                                     text: 'Masturbation level based on length of current relationship'
@@ -667,7 +668,8 @@ $(document).ready(function(){
                 case "occupation":
                     $('#container_occupation').highcharts({
                         chart: {
-                            type: 'column'
+                            type: 'column',
+                            backgroundColor:'rgba(255, 255, 255, 0.1)'
                         },
                         title: {
                             text: 'Masturbation based on occupation'
@@ -689,7 +691,8 @@ $(document).ready(function(){
                             min: 0,
                             title: {
                                 text: 'Average masturbations per month'
-                            }
+                            },
+                            gridLineColor: '#000'
                         },
                         tooltip: {
                             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
@@ -760,7 +763,7 @@ $(document).ready(function(){
                     $('#container_religion').highcharts({
                             chart: {
                                 type: 'column',
-                                backgroundColor: '#8D8695'
+                                backgroundColor:'rgba(255, 255, 255, 0.1)'
                             },
 
                             title: {
@@ -850,7 +853,7 @@ $(document).ready(function(){
                             chart: {
                                 type: 'scatter',
                                 zoomType: 'xy',
-                                backgroundColor: chartBackgroundColor
+                                backgroundColor:'rgba(255, 255, 255, 0.1)'
                             },            
                             title: {
                                 text: 'Masturbation level based on amount of sexpartners',                
