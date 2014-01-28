@@ -18,7 +18,11 @@ $(document).ready(function(){
                     $('#container_thinking').highcharts({
                             chart: {
                                 type: 'column',
+<<<<<<< HEAD
                                 backgroundColor:'rgba(255, 255, 255, 0.1)'
+=======
+                                backgroundColor: chartBackgroundColor
+>>>>>>> a1bad7c5fd20fdced8f8976ad44d6c8244a6907c
                             },
                             title: {
                                 text: 'Masturbation based on how often you think about sex'
@@ -669,7 +673,11 @@ $(document).ready(function(){
                     $('#container_occupation').highcharts({
                         chart: {
                             type: 'column',
+<<<<<<< HEAD
                             backgroundColor:'rgba(255, 255, 255, 0.1)'
+=======
+                            backgroundColor: '#F7F0D2'
+>>>>>>> a1bad7c5fd20fdced8f8976ad44d6c8244a6907c
                         },
                         title: {
                             text: 'Masturbation based on occupation'
