@@ -364,6 +364,10 @@ p {
 	font-size: 20px;
 }
 
+.summaryright {
+	float: right;
+}
+
 .btn_showhide {
 	-moz-box-shadow:inset -49px -50px 0px -50px #fff000;
 	-webkit-box-shadow:inset -49px -50px 0px -50px #fff000;
@@ -438,6 +442,30 @@ p {
 	color: #635a72;
 }
 
+#empeight {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #334C66;
+}
+
+#empnine {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #EE797A;
+}
+
+#empten {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 900; 
+	letter-spacing: 1px;
+	color: #666666;
+}
+
+#empeleven {
+	font-family: 'Alegreya Sans', sans-serif; font-weight: 800; 
+	letter-spacing: 1px;
+	color: #EE797A;
+	font-size: 20px;
+}
 
 #first article,
 #third article,
