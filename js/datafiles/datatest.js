@@ -171,7 +171,7 @@ $(document).ready(function(){
                                       [5.19,9.04]
                                     ],
                             tooltip: {
-                                pointFormat: '(error range: {point.low}-{point.high})<br/>'
+                                pointFormat: ' (error range: {point.low}-{point.high})<br/>'
                             }
                         },
                         {
